@@ -1,0 +1,516 @@
+/* === GLOBAL === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a0e02;
+  margin: 0;
+  padding: 0;
+  color: #fff3e0;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === HEADER & LAYOUT === */
+header, aside {
+  background: linear-gradient(to right, #3e2723, #5d4037);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+h1, h2 {
+  color: #ffe082;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0.5rem 0;
+}
+
+/* === AUTH BUTTONS === */
+.auth-buttons {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  z-index: 10;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  border: 2px solid #ffe082;
+  background: linear-gradient(to right, #ffecb3, #fff3e0);
+  color: #4e342e;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background: linear-gradient(to right, #ffca28, #ffc107);
+  color: #3e2723;
+  transform: translateY(-2px);
+}
+
+/* === USER MENU === */
+.user-menu {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: #4e342e;
+  border: 2px solid #ffe082;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.user-menu img,
+.profile-pic,
+.profile-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffe082;
+}
+
+.user-name,
+.username {
+  font-weight: bold;
+  color: #ffe082;
+  font-size: 0.95rem;
+}
+
+.logout-btn {
+  padding: 0.4rem 1rem;
+  background: linear-gradient(to right, #ffab91, #ff8a65);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(to right, #ff7043, #ff5722);
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* === SEARCH SECTION === */
+.search-section {
+  text-align: center;
+  padding: 2rem;
+  background: #3e2723;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  margin: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
+}
+
+.search-section input {
+  padding: 0.75rem;
+  width: 80%;
+  border-radius: 12px;
+  border: 1px solid #8d6e63;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #4e342e;
+  color: #fff3e0;
+}
+
+.search-section input:focus {
+  border-color: #ffcc80;
+  box-shadow: 0 0 0 3px rgba(255, 204, 128, 0.3);
+  outline: none;
+}
+
+/* === KOMPONEN LAINNYA TETAP SESUAI STRUKTUR === */
+/* Warna dikonversi tanpa mengubah posisi/bentuk seperti yang diminta */
+
+
+h1, h2 {
+  color: #ffcc80;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 0.5rem 0;
+}
+
+/* === AUTH BUTTONS === */
+.auth-buttons {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  z-index: 10;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  border: 2px solid #161a1f;
+  background: linear-gradient(to right, #4e342e, #4e342e);
+  color: #fff5f3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background: linear-gradient(to right, #4e342e, v);
+  color: #4e342e;
+  transform: translateY(-2px);
+}
+
+/* === USER MENU === */
+.user-menu {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 2px solid #8da10d;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.user-menu img,
+.profile-pic,
+.profile-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4e342e;
+}
+
+.user-name,
+.username {
+  font-weight: bold;
+  color: #efdad5;
+  font-size: 0.95rem;
+}
+
+.logout-btn {
+  padding: 0.4rem 1rem;
+  background: linear-gradient(to right, #4e342e, #4e342e);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(to right, #4e342e, #4e342e);
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* === SEARCH SECTION === */
+
+
+.search-section input:focus {
+  border-color: #8da10d;
+  box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.2);
+  outline: none;
+}
+
+/* === CATEGORY BUTTONS === */
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.categories button {
+  padding: 0.6rem 1.3rem;
+  background: linear-gradient(to right, #754f47, #705048);
+  color: #ffcc80;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(42, 47, 29, 0.08);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.categories button:hover {
+  background: linear-gradient(to right, #4e342e, #4e342e);
+  transform: translateY(-3px);
+}
+
+/* === RECIPES === */
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+.recipe-card {
+  background-color: #4e342e;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(203, 9, 9, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recipe-card h3 {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #ffcc80;
+}
+
+.recipe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+}
+
+/* === RESPONSIVE THUMBNAIL === */
+.small-thumb {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .small-thumb,
+  .recipe-card img {
+    height: 70px;
+  }
+}
+
+/* === RECIPE DETAIL === */
+#recipe-detail {
+  padding: 2rem;
+  background: #4e342e;
+  margin: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#recipe-detail img {
+  width: 100px;
+  max-width: 100px;
+  min-width: 100px;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* === LOGIN & SIGNUP FORM === */
+.auth-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+  color: #1cb624;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-container input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-container input:focus {
+  border-color: #64b5f6;
+  box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.2);
+  outline: none;
+}
+
+.auth-container button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: linear-gradient(to right, #64b5f6, #81d4fa);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-container button:hover {
+  background: linear-gradient(to right, #4fc3f7, #29b6f6);
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.recipe-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.recipe-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Responsif saat layar kecil */
+@media (max-width: 600px) {
+  .recipe-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #recipe-detail {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  #recipe-detail img {
+    width: 80px;
+  }
+
+  .recipe-text ul, .recipe-text ol {
+    padding-left: 1rem;
+    text-align: left;
+  }
+}
+
+
+@keyframes slideIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#recipe-detail {
+  animation: slideIn 0.5s ease;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8a3636; /* fallback jika video gagal load */
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.4) saturate(1.2); /* gelapkan dan buat warna sedikit lebih hidup */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  color: #ffffff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffe082; /* kuning lembut, cocok untuk suasana kuliner */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  color: #fbe9e7; /* krem hangat */
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
